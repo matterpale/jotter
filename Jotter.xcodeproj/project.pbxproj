@@ -1,0 +1,534 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E30A344028B62736006C3B6C /* JotterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30A343F28B62736006C3B6C /* JotterApp.swift */; };
+		E30A344228B62736006C3B6C /* JotterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30A344128B62736006C3B6C /* JotterView.swift */; };
+		E30A344428B62739006C3B6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E30A344328B62739006C3B6C /* Assets.xcassets */; };
+		E30A344728B62739006C3B6C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E30A344628B62739006C3B6C /* Preview Assets.xcassets */; };
+		E30A345428B62838006C3B6C /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E30A345328B62838006C3B6C /* WidgetKit.framework */; };
+		E30A345628B62838006C3B6C /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E30A345528B62838006C3B6C /* SwiftUI.framework */; };
+		E30A345928B62838006C3B6C /* JotterWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30A345828B62838006C3B6C /* JotterWidget.swift */; };
+		E30A345B28B6283B006C3B6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E30A345A28B6283B006C3B6C /* Assets.xcassets */; };
+		E30A345F28B6283B006C3B6C /* JotterWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E30A345128B62838006C3B6C /* JotterWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E30A345D28B6283B006C3B6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E30A343428B62736006C3B6C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E30A345028B62838006C3B6C;
+			remoteInfo = JotterWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E30A346328B6283B006C3B6C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E30A345F28B6283B006C3B6C /* JotterWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E30A343C28B62736006C3B6C /* Jotter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jotter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E30A343F28B62736006C3B6C /* JotterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JotterApp.swift; sourceTree = "<group>"; };
+		E30A344128B62736006C3B6C /* JotterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JotterView.swift; sourceTree = "<group>"; };
+		E30A344328B62739006C3B6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E30A344628B62739006C3B6C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E30A345128B62838006C3B6C /* JotterWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = JotterWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E30A345328B62838006C3B6C /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		E30A345528B62838006C3B6C /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		E30A345828B62838006C3B6C /* JotterWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JotterWidget.swift; sourceTree = "<group>"; };
+		E30A345A28B6283B006C3B6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E30A345C28B6283B006C3B6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E30A346428B639C8006C3B6C /* Jotter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Jotter.entitlements; sourceTree = "<group>"; };
+		E30A346528B639D7006C3B6C /* JotterWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JotterWidgetExtension.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E30A343928B62736006C3B6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E30A344E28B62838006C3B6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E30A345628B62838006C3B6C /* SwiftUI.framework in Frameworks */,
+				E30A345428B62838006C3B6C /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E30A343328B62736006C3B6C = {
+			isa = PBXGroup;
+			children = (
+				E30A343E28B62736006C3B6C /* Jotter */,
+				E30A345728B62838006C3B6C /* JotterWidget */,
+				E30A345228B62838006C3B6C /* Frameworks */,
+				E30A343D28B62736006C3B6C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E30A343D28B62736006C3B6C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E30A343C28B62736006C3B6C /* Jotter.app */,
+				E30A345128B62838006C3B6C /* JotterWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E30A343E28B62736006C3B6C /* Jotter */ = {
+			isa = PBXGroup;
+			children = (
+				E30A346428B639C8006C3B6C /* Jotter.entitlements */,
+				E30A343F28B62736006C3B6C /* JotterApp.swift */,
+				E30A344128B62736006C3B6C /* JotterView.swift */,
+				E30A344328B62739006C3B6C /* Assets.xcassets */,
+				E30A344528B62739006C3B6C /* Preview Content */,
+			);
+			path = Jotter;
+			sourceTree = "<group>";
+		};
+		E30A344528B62739006C3B6C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E30A344628B62739006C3B6C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E30A345228B62838006C3B6C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E30A345328B62838006C3B6C /* WidgetKit.framework */,
+				E30A345528B62838006C3B6C /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E30A345728B62838006C3B6C /* JotterWidget */ = {
+			isa = PBXGroup;
+			children = (
+				E30A346528B639D7006C3B6C /* JotterWidgetExtension.entitlements */,
+				E30A345828B62838006C3B6C /* JotterWidget.swift */,
+				E30A345A28B6283B006C3B6C /* Assets.xcassets */,
+				E30A345C28B6283B006C3B6C /* Info.plist */,
+			);
+			path = JotterWidget;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E30A343B28B62736006C3B6C /* Jotter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E30A344A28B62739006C3B6C /* Build configuration list for PBXNativeTarget "Jotter" */;
+			buildPhases = (
+				E30A343828B62736006C3B6C /* Sources */,
+				E30A343928B62736006C3B6C /* Frameworks */,
+				E30A343A28B62736006C3B6C /* Resources */,
+				E30A346328B6283B006C3B6C /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E30A345E28B6283B006C3B6C /* PBXTargetDependency */,
+			);
+			name = Jotter;
+			productName = Jotter;
+			productReference = E30A343C28B62736006C3B6C /* Jotter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E30A345028B62838006C3B6C /* JotterWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E30A346028B6283B006C3B6C /* Build configuration list for PBXNativeTarget "JotterWidgetExtension" */;
+			buildPhases = (
+				E30A344D28B62838006C3B6C /* Sources */,
+				E30A344E28B62838006C3B6C /* Frameworks */,
+				E30A344F28B62838006C3B6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JotterWidgetExtension;
+			productName = JotterWidgetExtension;
+			productReference = E30A345128B62838006C3B6C /* JotterWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E30A343428B62736006C3B6C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					E30A343B28B62736006C3B6C = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					E30A345028B62838006C3B6C = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = E30A343728B62736006C3B6C /* Build configuration list for PBXProject "Jotter" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E30A343328B62736006C3B6C;
+			productRefGroup = E30A343D28B62736006C3B6C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E30A343B28B62736006C3B6C /* Jotter */,
+				E30A345028B62838006C3B6C /* JotterWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E30A343A28B62736006C3B6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E30A344728B62739006C3B6C /* Preview Assets.xcassets in Resources */,
+				E30A344428B62739006C3B6C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E30A344F28B62838006C3B6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E30A345B28B6283B006C3B6C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E30A343828B62736006C3B6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E30A344228B62736006C3B6C /* JotterView.swift in Sources */,
+				E30A344028B62736006C3B6C /* JotterApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E30A344D28B62838006C3B6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E30A345928B62838006C3B6C /* JotterWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E30A345E28B6283B006C3B6C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E30A345028B62838006C3B6C /* JotterWidgetExtension */;
+			targetProxy = E30A345D28B6283B006C3B6C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E30A344828B62739006C3B6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E30A344928B62739006C3B6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E30A344B28B62739006C3B6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Jotter/Jotter.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Jotter/Preview Content\"";
+				DEVELOPMENT_TEAM = 4283NZJ7GN;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = matterpale.JotterApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E30A344C28B62739006C3B6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Jotter/Jotter.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Jotter/Preview Content\"";
+				DEVELOPMENT_TEAM = 4283NZJ7GN;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = matterpale.JotterApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		E30A346128B6283B006C3B6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = JotterWidgetExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4283NZJ7GN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JotterWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = JotterWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = matterpale.JotterApp.JotterWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E30A346228B6283B006C3B6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = JotterWidgetExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4283NZJ7GN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JotterWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = JotterWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = matterpale.JotterApp.JotterWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E30A343728B62736006C3B6C /* Build configuration list for PBXProject "Jotter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E30A344828B62739006C3B6C /* Debug */,
+				E30A344928B62739006C3B6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E30A344A28B62739006C3B6C /* Build configuration list for PBXNativeTarget "Jotter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E30A344B28B62739006C3B6C /* Debug */,
+				E30A344C28B62739006C3B6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E30A346028B6283B006C3B6C /* Build configuration list for PBXNativeTarget "JotterWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E30A346128B6283B006C3B6C /* Debug */,
+				E30A346228B6283B006C3B6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E30A343428B62736006C3B6C /* Project object */;
+}
